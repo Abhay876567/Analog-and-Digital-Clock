@@ -1,0 +1,131 @@
+main{
+    height: 83.8vh;
+}
+
+#clockContainer{
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    background: url(analog\ image.jpg) no-repeat;
+    background-size: 100%;
+    margin: auto;
+}
+#clockContainer2{
+    position: relative;
+    width: 40vw;
+    height: 38vw;
+    background: url(analog\ image\ 2.jpeg) no-repeat;
+    background-size: 94%;
+    margin: auto;
+}
+.cont{
+    display: flex;
+}
+#hour , #minute , #second{
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour{
+    width: 1%;
+    height: 17%;
+    left: 49%;
+    top: 34%;
+    background: rgb(46, 80, 46); 
+
+}
+#minute{
+    width: 1%;
+    height: 21%;
+    left: 49%;
+    top: 30%;
+    background: rgb(43, 43, 100);
+
+}
+#second{
+    width: .5%;
+    height: 24%;
+    left: 49.2%;
+    top: 27%;
+    background: rgb(152, 8, 8);
+}
+#hour1 , #minute1 , #second1{
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour1{
+    width: 1%;
+    height: 19%;
+    left: 47.8%;
+    top: 29.7%;
+    background: rgb(39, 39, 39);   
+}
+#minute1{
+    width: 1%;
+    height: 26%;
+    left: 47.8%;
+    top: 22.8%;
+    background: rgb(58, 54, 54);
+}
+#second1{
+    width: .5%;
+    height: 34%;
+    left: 48.1%;
+    top: 14.5%;
+    background: rgb(152, 8, 8);
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    height: 7.5vh;
+    width: 100%;
+    position: fixed;
+}
+.footer p{
+    text-align: center;
+    padding-top: 1%;
+}
+
+.c-f{
+    font-family: 'Poppins', sans-serif;
+    background-color:aquamarine;
+    width: 100vw;
+    height: 83.8vh;
+}
+.hero{
+    height: 40vh;
+    width: 60vw;
+    background-color: rgb(88, 147, 225);
+    transform: translate(30%,55%);
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.hero span {
+    font-size: 20vh ;
+    color: rgb(96, 34, 34);
+    display: inline-block;
+    position: relative;
+}
+.hero span::after{
+    font-size: 4vh;
+    position: absolute;
+    bottom: -4%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#hrs::after{
+    content: 'Hours';
+}
+#min::after{
+    content: 'Minutes';
+}
+#sec::after{
+    content: 'Seconds';
+}
